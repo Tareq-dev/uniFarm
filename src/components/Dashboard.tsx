@@ -63,13 +63,13 @@ const Dashboard = () => {
                <p className='text-xl flex items-center mt-4 mx-12'>Referral</p>
                <p className='text-xl flex items-center mt-4 pt-96'><img className='mx-4 w-8' src={support} alt="" /> Support</p>
                </div>   
-               <div className='w-full px-10'>
+               <div className='w-full px-4 md:px-10'>
                     <Navbar />
                     <hr />
-                    <div className='flex mt-6 justify-between'>
+                    <div className='flex flex-wrap mt-6 justify-between'>
                     <div className='flex'>
                     <h2 className='text-4xl px-4 text-purple-800 font-semibold border-r-2'>Farms</h2>
-                    <p className='w-80 text-md mt-2 px-2 text-gray-500'>Stake one token and earn multiple token as
+                    <p className='w-full md:w-80 text-md mt-2 px-2 text-gray-500'>Stake one token and earn multiple token as
 rewards with high APY and low risk</p>
                     </div>
                     <div className="form-control mx-6">
@@ -79,18 +79,18 @@ rewards with high APY and low risk</p>
                     </label>
                     </div>
                     </div>
-                    <div className='flex mx-12 mt-10 border-b-2'>
+                    <div className='flex mt-10 border-b-2'>
                     <button className='px-16 bg-purple-200 text-purple-800 font-semibold border-b-4 border-purple-700 py-2'>ALL FARMS</button>
                     <button className='px-16'>HOT FARMS</button>
                     </div>
                     <div className='flex justify-between mt-20'>
-                        <div className='flex'>
+                        <div className='md:flex'>
                         <input className='border-neutral-500 border-b mb-4 border-gray-500 w-28 text-sm' value='Search' />
-                        <input className='border-neutral-500 border-b mb-4 border-gray-500 mx-12 w-40 text-sm' value='Sort By' />
+                        <input className='border-neutral-500 border-b mb-4 border-gray-500 md:mx-12 w-40 text-sm' value='Sort By' />
                         </div>
-                         <div className='flex rounded-2xl border'>
-                         <button onClick={listView} className={list ? "bg-blue-300  rounded-l-2xl p-2" : "p-2 rounded-l-2xl"}><BsListTask size={25} /></button>
-                         <button onClick={gridView} className={grid ? "bg-blue-300 text-white rounded-r-2xl p-2" : "rounded-r-2xl p-2"}><FiGrid size={25} /></button>
+                         <div className='flex rounded-2xl border h-8 md:h-10'>
+                         <button onClick={listView} className={list ? "bg-blue-300 px-2 rounded-l-2xl md:p-2" : "md:p-2 px-2 rounded-l-2xl"}><BsListTask size={25} /></button>
+                         <button onClick={gridView} className={grid ? "bg-blue-300 px-2 text-white rounded-r-2xl md:p-2" : "rounded-r-2xl px-2 md:p-2"}><FiGrid size={25} /></button>
                          </div>
                     </div>
                    { list ?

@@ -6,6 +6,8 @@ import uni from '../images/uni.png'
 import boost from '../images/boost.png'
 import pool from '../images/pool.png'
 import { MdCalculate } from 'react-icons/md';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import u1 from '../images/u1.png'
 import u2 from '../images/u2.png'
 import d3 from '../images/d3.png'
@@ -20,6 +22,10 @@ import p2 from '../images/p2.png'
 import p3 from '../images/p3.png'
 
 const Gridview = () => {
+     const percentageusdt = 80;
+     const percentageuftx = 75;
+     const percentagelink = 25;
+     const percentageylo = 25;
      return (
           <div className="grid md:grid-cols-3 gap-3 py-8">
               <div className='border p-4 rounded-lg'>
@@ -30,8 +36,26 @@ const Gridview = () => {
                     <p className='font-bold'> USDT</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-32'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar  value={percentageusdt} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#009F42',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>93.86%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
@@ -71,8 +95,26 @@ const Gridview = () => {
                     <p className='font-bold'> FTX</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-36'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar value={percentageuftx} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#009F42',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>78.57%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
@@ -112,8 +154,26 @@ const Gridview = () => {
                     <p className='font-bold'> LINK</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-36'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar value={percentagelink} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#C62828',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>24.90%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
@@ -153,8 +213,26 @@ const Gridview = () => {
                     <p className='font-bold'> UNI</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-32'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar  value={percentageusdt} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#009F42',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>93.86%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
@@ -194,8 +272,26 @@ const Gridview = () => {
                     <p className='font-bold'> FTX</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-32'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar  value={percentageuftx} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#009F42',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>78.57%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
@@ -235,8 +331,26 @@ const Gridview = () => {
                     <p className='font-bold'> LINK</p>
                </div>
                </div>
-               <div className='flex mt-8 w-64'>
-                    <p className='text-gray-500'>Pool Filled</p>
+               <div className='flex mt-8'>
+                    <p className='text-gray-500 w-32'>Pool Filled</p>
+                    <div className='flex items-center'>
+             <div className='w-8'>
+              <CircularProgressbar  value={percentageylo} styles={{
+               root: {
+                    borderRadius:50,
+               },
+               path: {
+                    strokeWidth:25,
+                    stroke: '#FBB500',
+               },
+               trail: {
+                    strokeWidth:25,
+                    stroke: '#d6d6d6',
+               },
+               }} />
+              </div>
+              <p className='font-bold mx-2'>24.90%</p>
+             </div>
                </div>
                <div className='flex mt-8 w-64 justify-between'>
                     <p className='w-36 text-gray-500'>Rewards</p>
